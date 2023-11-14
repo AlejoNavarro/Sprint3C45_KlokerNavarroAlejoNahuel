@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="icon" href="Fotos/LogoPestaña.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <header>
+      <!-- Menu -->
+        <img class="logo" src="Fotos/Logo.png" alt="Logo">
+            <button id="abrirm" class="abrirmenu"><i class="bi bi-list"></i></button> <!-- Boton e icono para abrir menu en resoluciones menores -->
+           
+        <nav class="nav" id="nav">
+            <button id="cerrarm" class="cerrarmenu"><i class="bi bi-x-circle"></i></button> <!-- Boton e icono para cerrar menu en resoluciones menores -->
+            <ul class="navlist">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/productos.html">Productos</a></li>
+                <li><a href="html/servicios.html">Servicios</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <!-- INICIO DEL CAROUSEL -->
+       
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="Fotos/carouseluno.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="mt-5 fs-3 text-uppercase">Bienvenido</p>
+                  <h1 class="display-1 fw-bolder text-capitalize">HelloWorld</h1>
+              </div>
+            </div>
+              
+            <div class="carousel-item c-item">
+                <img src="Fotos/carouseldos.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="text-uppercase fs-3 mt-5">Servicios</p>
+                  <p class="display-1 fw-bolder text-capitalize">"Explora Nuestros Servicios: Innovación en Cada Producto."</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" id="servicios-boton" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Servicios</button>
+                </div>
+              </div>
+              
+              <div class="carousel-item c-item">
+                <img src="Fotos/carouseltres.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption top-0 mt-4">
+                  <p class="text-uppercase fs-3 mt-5">Contactenos</p>
+                  <p class="display-1 fw-bolder text-capitalize">"Conéctese con nosotros. Estamos acá para ayudarte."</p>
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5" id="contacto-boton" data-bs-toggle="modal"
+                    data-bs-target="#booking-modal">Contacto</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <section class="contenedorseparador">
+            <!-- solo un separador -->
+        </section>
+        
+       <section class="baner-dividido">
+            <div class="izq">
+                <div class="textoizq">
+                    <h2>Quienes Somos</h2>
+                    <p class="descnos"> En HelloWorld, no somos solo una empresa de tecnología, somos una comunidad de innovadores. Ofrecemos servicios desde asesoría y ensamblado , respaldados por una amplia gama de productos tecnológicos de calidad.<br>¡Unite a nosotros en nuestro viaje hacia el futuro digital!</p>
+                </div>   
+            </div>
+        
+            <div class="der">
+                 <!-- Mi imagen de fondo  -->
+            </div>
+        </section>
+
+        <section class="contenedorseparador">
+            <!-- solo un separador -->
+        </section>
+
+        <div class="titulotarjetas">
+            <h2 class="titulotar">Te Ofrecemos:</h2> <!-- Aqui hay un separador de los que vengo usando, pero esta vez con la funcion de titulo -->
+        </div> <br><br><br><br><br>
+        
+        <section class="contenedor">
+          <div class="tarjeta" onclick="mostrarDetalle('tarjeta1')">                
+            <div class="imagen-tarjeta tar-1"></div>
+                <h3 class="tittar">Servicio Tecnico</h3>
+                <p class="ptar">Reparación de equipos electrónicos, Asistencia técnica especializada, Servicios de mantenimiento preventivo y Optimización y actualización de software.</p>
+            </div>
+            
+            <div class="tarjeta" onclick="mostrarDetalle('tarjeta2')">
+                <div class="imagen-tarjeta tar-2"></div>
+                <h3 class="tittar">Productos</h3>
+                <p class="ptar">Amplia variedad de productos disponibles, Calidad garantizada en cada artículo, Actualizaciones regulares de inventario y Asesoramiento personalizado para la elección adecuada.</p>
+            </div>
+            
+            <div class="tarjeta" onclick="mostrarDetalle('tarjeta3')">
+                <div class="imagen-tarjeta tar-3"></div>
+                <h3 class="tittar">Ensamblado</h3>
+                <p class="ptar">Montaje experto de componentes, Uso de tecnología avanzada en el ensamblado, Control de calidad riguroso en cada proceso y Personal especializado en ensamblaje de precisión.</p>
+            </div>
+            
+            <div class="tarjeta" onclick="mostrarDetalle('tarjeta4')">
+                <div class="imagen-tarjeta tar-4"></div>
+                <h3 class="tittar">Asesoría</h3>
+                <p class="ptar">Asesoramiento personalizado y especializado, Orientación en la elección de productos y servicios, Solución de dudas y consultas técnicas y Acompañamiento en la toma de decisiones informadas.</p>
+            </div>
+        </section>
+
+    
+        <section class="contenedorseparador">
+            <!-- solo un separador -->
+        </section>
+
+        <div class="titulotarjetas">
+            <h2 class="titulotar">FAQ</h2> <!--  Aqui hay otro separador de los que vengo usando, con la funcion de titulo -->
+        </div>
+        
+        <!-- Aqui comienza la seccion de preguntas.Acordión sacado de Bootstrap --> 
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="fs-4">¿Ofrecen opciones de envío internacional?</span>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Si.</strong> Ofrecemos opciones de envío internacional para que puedas disfrutar de nuestros productos en cualquier parte del mundo. Consulta nuestras opciones de envío durante el proceso de compra.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="fs-4">¿Cuáles son las opciones de pago disponibles?</span>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Acordes a tus gustos!</strong> Aceptamos diversas opciones de pago para brindarte flexibilidad y comodidad. Puedes realizar tu compra utilizando tarjetas de crédito, débito o a través de plataformas de pago en línea seguras. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="fs-4">¿Cómo puedo contactar con el servicio de atención al cliente?</span>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Podes ponerte en contacto con nuestro servicio de atención al cliente de las siguientes maneras:</p>
+                  <ul>
+                      <li><strong>Correo Electrónico:</strong> Envía tus consultas a <a href="mailto:correo@tuempresa.com">helloworldinc@gmail.com</a>. Nuestro equipo responderá a la brevedad posible.</li>
+                      <li><strong>Número de Teléfono:</strong> Llámanos al número de atención al cliente: +54 1234 5678. Estamos disponibles durante el horario comercial para ayudarte con cualquier pregunta que puedas tener.</li>
+                      <li><strong>Formulario en Línea:</strong> Completa el formulario de contacto en nuestra página web. Proporciona tus detalles y describe tu consulta, y nos pondremos en contacto contigo lo antes posible.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+        <!-- Fin del acordión -->
+    </main>
+
+    <!-- Acá comienza el footer (pie de pagina) -->
+  <footer>
+        <div class="contenedorfooter">
+            <div class="iconos">
+                <a href="https://api.whatsapp.com/send?phone=+541122433319&text=Hola%20HelloWorld!%20Quisiera%20consultarles%20sobre:%20"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/helloworldinc_/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="html/contacto.html"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="footernav">
+                <ul>
+                    <li><a href="html/mantenimiento.html">Redes</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                    <li><a href="html/ubicacion.html">Ubicación</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>Copyright &copy;2023; Diseñado por <span class="Diseñador">HelloWorld</span></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="java/main.js"></script> <!-- Mi archivo JAVA -->
+</body>
+</html>

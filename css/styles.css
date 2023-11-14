@@ -1,0 +1,975 @@
+/* Restablezco valores de la pagina */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MENU */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(24, 168, 235);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.logo{
+    max-width: 15rem;
+}
+
+
+.nav {
+    z-index: 1000; /* Un valor alto para el menú hamburguesa, asi no se oculta por el carousel */
+}
+
+
+.navlist{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-family: Consolas;
+
+}
+
+.navlist li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.navlist li a:hover {
+    color: rgb(9, 131, 202);
+    
+}
+
+
+.abrirmenu{
+    display: none; /* Esto oculta mis iconos del menu en pantallas grandes */
+}
+
+.cerrarmenu{
+    display: none;  /* Esto oculta mis iconos del menu en pantallas grandes */
+}
+
+
+/* CAROUSEL */
+
+#hero-carousel {
+    /* Ajustar el ancho y la altura acá */
+    width: 100%;
+    
+}
+
+
+.carousel-inner {
+    max-height: 40rem;
+    font-family: Consolas;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.c-item {
+    position: relative;
+    font-family: Consolas;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #ffffff;
+    padding: 0px;
+    width: 100%;
+    height: 46.5%;
+    font-family: Consolas;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra al texto asi resalta mas */
+}
+
+
+.carousel-caption p, .carousel-caption h1, .carousel-caption button {
+    max-width: 100%;
+    padding: 0px;
+    text-align: center;
+    font-family: Consolas;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra al texto asi resalta mas */
+}
+
+
+
+
+/* Bienvenida */
+.titulo {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Consolas;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Banner QUIENES SOMOS */
+
+.contenedorseparador{
+    background: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+   
+
+}
+
+.izq {
+    background: rgba(25, 148, 219, 0.596);
+    height: 40vh;
+    width: 50%; /* ocupa la mitad */
+    max-width: 50%;
+    display: flex; /* Alinea el contenido verticalmente */
+    align-items: center; /* Alinea el contenido verticalmente */
+    padding: 0 20px; /* Agregar espacio a los lados del contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: Consolas;
+    color: #FFFFFF;
+    
+}
+
+.der{
+    background-image: url(../Fotos/derechaban.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%; /* ocupa la otra mitad */
+    max-width: 50%;
+    height: 40vh;
+    display: flex; /* Alinea el contenido verticalmente */
+    align-items: center; /* Alinea el contenido verticalmente */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+.baner-dividido{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.textoizq {
+    text-align: center; /* Alineación del texto al centro */
+
+}
+
+
+.textoizq h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    max-width: 100%; /* Limita el ancho del título */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.textoizq p.descnos {
+    font-size: 1.2rem; 
+    line-height: 2.3; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+
+/* Aca abajo estan las tarjetas */
+
+/* CSS para el contenedor del título */
+.titulotarjetas {
+    background-color:rgba(25, 148, 219, 0.596); 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);   
+}
+
+/* CSS para el título */
+.titulotar {
+    font-size: 36px; 
+    color: #FFFFFF;  
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    font-weight: bold;
+    font-family: Consolas;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    
+    background:  rgba(25, 148, 219, 0.596);
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.imagen-tarjeta{
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.tar-1{
+    background-image: url(../Fotos/tarjeta1.jpg);
+}
+
+.tar-2{
+    background-image: url(../Fotos/tarjeta2.jpg);
+}
+
+.tar-3{
+    background-image: url(../Fotos/tarjeta3.jpg);
+}
+
+.tar-4{
+    background-image: url(../Fotos/tarjeta4.jpg);
+}
+
+.tittar{
+    font-size: 2rem;
+    text-align: center;
+    font-family: Consolas, sans-serif;
+    color: aliceblue;
+}
+
+.ptar{
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    font-family: Arial, Helvetica;
+}
+
+
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+/* Acordion */
+.accordion-header {
+    font-family: Consolas;
+}
+
+.accordion-body {
+    font-family: Consolas;
+    font-size: 1.5rem;
+}
+
+/*  Footer  */
+footer{
+    background-color: rgb(24, 168, 235);
+    margin-top: auto;
+    
+}
+
+.contenedorfooter{
+    width: 100%;
+    padding: 10px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: Consolas;
+}
+
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+
+.iconos a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.iconos a i{
+    font-size: 2rem;
+    color:rgb(24, 168, 235);
+}
+
+.copy{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.footernav{
+    margin: 20px;
+}
+
+.footernav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footernav ul li a:hover {
+    color:rgb(9, 131, 202);
+    transition: color 0.3s ease; 
+}
+
+/* HTML SERVICIOS */
+
+.servfondo{
+    background-image: url(../Fotos/serviciosfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedorservicios {
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+  }
+  
+.tituservicios {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 50px;
+    padding-bottom: 15px;
+    font-family: Consolas;
+    text-transform: uppercase;
+  }
+  
+  .box-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); /* 2 filas */
+    gap: 15px;
+    text-align: center; 
+  }
+
+  .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .contenedorservicios .box-contenedor .box .img{
+    height: 5rem;
+  }
+
+  .contenedorservicios .box-contenedor .box .servnombre{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 10px 0;
+    font-family: Consolas;
+  }
+
+  .contenedorservicios .box-contenedor .box .pbox{
+    color: rgb(41, 34, 34);
+    font-size: 1rem;
+}
+
+.btnasesoria{
+    margin-top: 0.75rem;
+    display: inline-block;
+    background: rgb(24, 168, 235);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 25px;
+    
+}
+
+.box:hover{
+    transform: scale(1.02);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+span.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+
+/* HTML CONTACTO */
+.titcontacto{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(101, 187, 236);
+    padding: 1rem;
+    font-family: Consolas;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.desccontacto{
+    text-align: center;
+    background-color: rgb(101, 187, 236);
+    padding: 10px; 
+    margin-top: 1rem;
+    color: #fff;
+    font-family: Consolas;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto 20px;    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-family: Consolas;
+    text-transform: uppercase;
+  }
+  
+  form input,form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: rgba(25, 148, 219, 0.596);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  form input[type="submit"]:hover {             /* Boton */
+    background-color: #0056b3;
+  }
+
+
+
+  /* HTML UBICACION */
+
+  .izq2 {
+    background: rgba(25, 148, 219, 0.596);
+    height: 40vh;
+    width: 50%; /* ocupa la mitad */
+    max-width: 50%;
+    display: flex;
+    align-items: center; 
+    padding: 0 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-family: Consolas;
+    color: #FFFFFF;
+    
+}
+
+.der2 {
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    max-width: 50%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /*  que el mapa no se desborde */
+}
+
+.der2 iframe {
+    width: 100%; 
+    height: 100%;
+}
+
+.baner-dividido2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.textoizq2 {
+    text-align: center; 
+
+}
+
+
+.textoizq2 h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    max-width: 100%; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.textoizq2 p.textubi {
+    font-size: 1.2rem; 
+    line-height: 2.3; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    
+    
+}
+
+
+/* HTML Productos */
+
+main.productosmain {
+    text-align: center;
+    margin: 2rem;
+}
+
+body.fondoprod{
+    background-image: url(../Fotos/fondoproductos.jpg);
+}
+
+.carritotitulo {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(101, 187, 236);
+    padding: 1rem;
+    font-family: Consolas;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.desccarrito {
+    text-align: center;
+    background-color: rgb(101, 187, 236);
+    padding: 10px; 
+    margin-top: 1rem;
+    color: #fff;
+    font-family: Consolas;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    
+}
+.productosmain #productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productosmain .producto {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin: 2rem;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Consolas;
+    
+}
+
+.productosmain .producto span {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #333;
+    
+}
+
+.productosmain .producto button {
+    background-color: rgba(25, 148, 219, 0.596);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    
+    
+}
+
+.productosmain .producto button:hover {
+    background-color: #457ba0;
+}
+
+.productosmain button {
+    background-color: #f05a5a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Consolas;
+}
+
+.h2carrito{
+    font-size: 2rem;
+    font-family: Consolas;
+    background-color: rgba(25, 148, 219, 1);
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 8px; 
+}
+
+.totalcarrito{
+    font-family: Consolas;
+    color: #f05a5a;
+    text-transform: uppercase;
+}
+
+
+/* HTML Mantenimiento */
+
+.mantenimiento-contenedor{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titmantenimiento{
+    color: rgb(255, 255, 255);
+    font-family: Consolas;
+    text-transform: uppercase;
+    background-color: rgba(25, 148, 219, 1);
+}
+
+.pmantenimiento{
+    text-transform: uppercase;
+    font-family: Consolas;
+}
+
+/* INICIO DE RESPONSIVE */
+
+@media screen and (max-width: 768px){ /* Resoluciones menores a 768px */
+
+ .abrirmenu{            /* Aparece icono para abrir menu */
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.cerrarmenu{            /* Aparece icono para cerrar menu */
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav{                   /* Configuro mi menu para esta resolucion, lo cual lo ubica verticalmente a la derecha y pone oscuro el resto de la pagina */
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0 ;
+    background-color: rgb(24, 168, 235);
+    padding: 2rem;
+    bottom: 0;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    font-family: Consolas;
+   
+}
+
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navlist{
+    flex-direction: column;
+    align-items: end;
+}
+
+.navlist li a{
+    color: white;
+}
+
+}
+
+
+/* Carousel */
+@media (max-width: 880px) { 
+    .carousel-caption {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 5px;
+    }
+
+    .carousel-caption p,
+    .carousel-caption h1 {
+       font-size: 2rem; /* Oculta el texto */
+    }
+}
+
+@media (max-width: 768px) { 
+    .carousel-caption {
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px;
+    }
+
+    .carousel-caption p,
+    .carousel-caption h1 {
+       font-size: 2rem; /* Oculta el texto */
+    }
+
+    .carousel-caption button {
+        display: block; /* Muestra el botón en el centro */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .carousel-caption p{
+        font-size: 1.5rem !important; 
+        margin-top: 0px !important;
+    }
+    .carousel-caption h1 {
+       font-size: 2rem !important; 
+       margin-top: 10px !important;
+      
+    }
+
+    .carousel-caption button {
+        display: block; /* Muestra el botón en el centro */
+        margin-top: 5px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    carousel-caption {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .carousel-caption p{
+        font-size: 1rem !important; 
+        margin-top: 0px !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2rem !important; 
+        margin-top: 10px !important;
+       
+     }
+
+    .carousel-caption button {
+        display: block; /* Muestra el botón en el centro */
+        margin-top: 5px !important;
+       
+    }
+}
+
+
+/* Banner Quienes Somos */
+@media (max-width: 1190px) {    
+    .baner-dividido {
+        flex-direction: column; /* Apilo los elementos */
+    }
+
+    .textoizq h2 {
+        font-size: 2rem;
+}
+
+
+
+    .izq, .der {
+        width: 100%; 
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .textoizq {
+        text-align: left; 
+        padding: 0.5rem; 
+    }
+
+    .textoizq h2 {
+        font-size: 1.5rem; 
+    }
+
+    .textoizq p.descnos {
+        font-size: 0.9rem; 
+    }
+}
+
+
+/* Servicios */
+@media screen and (max-width: 1230px) {
+    .contenedorservicios .box-contenedor {
+      grid-template-columns: repeat(2, 1fr); /* Una columna */
+      grid-template-rows: auto; /* Automático (una fila) */
+    }
+  }
+  
+  .contenedorservicios .titservicios {
+    color: rgb(9, 131, 202);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 50px;
+    padding-bottom: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedorservicios .box-contenedor {
+        grid-template-columns: repeat(1, 1fr); /* Una columna */
+        grid-template-rows: auto; /* Automático (una fila) */
+      }
+    }
+    
+    .contenedorservicios .titservicios {
+      color: rgb(9, 131, 202);
+      text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+      font-size: 50px;
+      padding-bottom: 15px;
+    }
+
+
+
+/* Ubicacion */
+@media (max-width: 1190px) {    
+    .baner-dividido2 {
+        flex-direction: column; /* Apilo los elementos */
+    }
+
+    .textoizq2 h2 {
+        font-size: 2rem;
+}
+
+
+
+    .izq2, .der2 {
+        width: 100%; 
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    .textoizq2 {
+        text-align: left; 
+        padding: 0.5rem; 
+    }
+
+    .textoizq2 h2 {
+        font-size: 1.5rem; 
+    }
+
+    .textoizq2 p.textubi {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 526px) { 
+    .textoizq2 {
+        text-align: center; 
+        padding: 0rem; 
+    }
+
+    .textoizq2 h2 {
+        font-size: 2rem; 
+    }
+
+    .textoizq2 p.textubi {
+        font-size: 0.9rem; 
+    }
+}
